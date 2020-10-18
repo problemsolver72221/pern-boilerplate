@@ -1,0 +1,44 @@
+{
+  "name": "serv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:api": "cross-env NODE_ENV=development npx nodemon boot.js",
+    "boot": "yarn && yarn start"
+  },
+  "babel": {
+    "presets": [
+      "@forrestjs/babel-preset-universal"
+    ]
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "@forrestjs/babel-preset-universal": "^3.16.0",
+    "@forrestjs/hooks": "^3.16.1",
+    "@forrestjs/service-env": "^3.16.0",
+    "@forrestjs/service-express": "3.0.0",
+    "@forrestjs/service-express-graphql": "3.0.0",
+    "@forrestjs/service-logger": "^3.16.1",
+    "@forrestjs/service-postgres": "^3.16.1",
+    "@marcopeg/hooks": "0.2.2",
+    "@marcopeg/utils": "^2.0.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-type-json": "^0.3.2",
+    "helmet": "^4.1.1",
+    "isomorphic-fetch": "^2.2.1",
+    "path": "^0.12.7",
+    "pg": "^8.4.1",
+    "sequelize": "^6.3.5",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {}
+}
